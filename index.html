@@ -1,0 +1,322 @@
+<DOCTYPE! html>
+<html>
+    <style>
+        div {
+            box-sizing: border-box;
+            flex-shrink: 0;
+        }
+        .topNav {
+            background-color:white;
+            overflow: hidden;
+            padding: 6px;
+        }
+        .center {
+            min-height: 92px;
+            max-height:290px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .centralIcon{
+            max-height: 92px;
+            position: relative;
+        
+        }
+        .centralGoogleIconPositioning{
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+            object-position: center bottom;
+            width: auto;
+            padding-bottom: 20px;
+
+
+        }   
+
+        .centralIcon img{
+            
+            margin-top: 198px;
+            height:92px;
+            aspect-ratio: auto 272/92;
+        }
+        .left {
+            float: left;
+            padding: 5px;
+            margin: 0px 5px;
+            height:60px;
+           
+        }
+        .left:first-of-type{
+            margin-left: 15px;
+        }
+        
+
+        .topNav a{
+            display: block;
+            text-align: center;
+            align-items: center;
+            font-family: Roboto, arial, sans-serif;
+            color: #222;
+            text-decoration: none;
+            font-size: 14px;
+        }  
+        .right {
+            float: right;
+            padding-top: 7px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 0px;
+            font-size:13px;
+            align-items: center;
+            text-align: center;
+        }
+
+        .rightProducts{
+            padding: 8px;
+            height:24px;
+            width:24px;
+            opacity: 1;         
+        }
+       
+        .rightUser a {
+            height: 32px;
+            width: 32px; 
+            padding: 4px;
+            float: right;
+            align-items: center;
+    
+        }
+        .rightUser img{
+            border-radius: 50%;
+            padding: 4px;
+            float: right;
+            align-items: center;
+           
+        }
+        .rightLinks {
+            height: 48px;
+            padding-top:12px;
+            font-size: s
+        }
+
+        .svg{
+            color:#5f6368;
+            opacity: 1;
+            fill: currentColor;
+        }
+
+        .svg1{
+            color:#5f6368;
+            opacity: .5;
+            fill: currentColor;
+        }
+        .searchBar {
+            width: auto;
+            min-width: 584px;
+            background: #fff;
+            display: block;
+            border: 1px solid #dfe1e5;
+            box-shadow: none;
+            border-radius: 24px;
+            z-index: 3;
+            height: 44px;
+            margin: 0 auto;
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            padding: 5px 8px 2px 16px;
+            padding-left: 7px;
+        } 
+
+        .searchBarMagGlass{
+            height:24px;
+            width: 24px;
+            float:left;
+            padding: 6x;
+            display: flex;
+            flex: 1;
+        }
+
+        .searchBarFormBox{
+            background-color: transparent;
+            border: none;
+            margin: 0;
+            padding: 0; 
+            color: rgba(0, 0, 0, 87);
+            word-wrap: break-word;
+            outline: none;
+            display: flex;
+            height: 24px;
+            font-size: 16px;
+            text-align: justify;
+
+        }
+        .searchBarMic{
+            float:right;
+            display: flex;
+            margin-left: 320px;
+        }
+
+        .boxesUnderSearch {
+            display: inline-block;
+            text-align: center;
+            padding-top: 18px;
+            margin-top: 20px;
+
+        }
+        .twoButtons a {
+            font-family: Roboto, arial, sans-serif;
+            color: #222;
+            font-size: 14px;
+            background-color: #f8f9fa;
+            border-radius: 1px;
+            height: 36px;
+            min-height: 54px;
+            line-height: 27px;
+            margin: 11px 4px 11px 4px ;
+            padding: 10px 16px 10px 16px;
+
+        }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0%;
+            width: 100%;
+            background-color:#f8f9fa;
+            color: #70757a;
+            display: block;
+            
+        }
+
+        .footerLeft{
+            float: left;
+            padding: 8px;
+            margin: 0px 5px;
+            font-family: Roboto, arial, sans-serif;
+            font-size: 14px;
+            height: 25px;
+            margin-left: 25px;
+            padding-top: 13px;
+            padding-left: 3px;
+            text-decoration: none;
+        }
+        .footerCentral{
+            padding: 8px;
+            margin: 0px 5px;
+            text-decoration: none;
+            font-family: Roboto, arial, sans-serif;
+            font-size: 14px;
+            margin-left: 25%;
+            padding-top: 13px;
+            
+            
+        }
+
+        .centralImg{
+            height: 14px;
+            width: 14px;
+            padding-top: 13px;
+            padding-left: 3px;
+
+        }
+        .footerRight {
+            float: right;
+            padding: 8px;
+            margin: 0px 5px;
+            height:25px;
+            font-family: Roboto, arial, sans-serif;
+            font-size: 14px;
+            text-decoration: none;
+            padding-top: 13px;
+            padding-left: 3px;
+            margin-right: 25px;
+            
+        }
+
+
+    </style>
+    
+    
+    <body>
+        <div class= "topNav"> 
+            <a class="left" href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header" target="_blank">About</a>  
+            <a class= "left" href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US" target="_blank">Store</a>
+            
+            <a class="rightUser" href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.com/" target="_blank">
+                <img src="https://lh3.googleusercontent.com/ogw/ADea4I50hd-bBFYKrKWrxIFcuN7fe4eynROUhYBRz0yw=s32-c-mo">
+            <a class="right rightProducts" href="https://www.google.com/intl/en/about/products" target="_blank">
+                    <!--I chose to put some svg images here because I read up on them, and it sounded like it would be really cool to try using them. It also made me really happy when they finally worked-->
+                    <svg class="svg" focusable="false" viewbox="0 0 24 24">
+                        <path d="M 6 8 c 1.1 0 2 -0.9 2 -2 s -0.9 -2 -2 -2 s -2 0.9 -2 2 s 0.9 2 2 2 Z M 
+                        12 20 c 1.1 0 2 -0.9 2 -2 s -0.9 -2 -2 -2 s -2 0.9 -2 2 s 0.9 2 2 2 Z M 6 20 c 1.1 
+                        0 2 -0.9 2 -2 s -0.9 -2 -2 -2 s -2 0.9 -2 2 s 0.9 2 2 2 Z M 6 14 c 1.1 0 2 -0.9 2 
+                        -2 s -0.9 -2 -2 -2 s -2 0.9 -2 2 s 0.9 2 2 2 Z M 12 14 c 1.1 0 2 -0.9 2 -2 s -0.9 
+                        -2 -2 -2 s -2 0.9 -2 2 s 0.9 2 2 2 Z M 16 6 c 0 1.1 0.9 2 2 2 s 2 -0.9 2 -2 s -0.9
+                        -2 -2 -2 s -2 0.9 -2 2 Z M 12 8 c 1.1 0 2 -0.9 2 -2 s -0.9 -2 -2 -2 s -2 0.9 -2 2 
+                        s 0.9 2 2 2 Z M 18 14 c 1.1 0 2 -0.9 2 -2 s -0.9 -2 -2 -2 s -2 0.9 -2 2 s 0.9 2 2 
+                        2 Z M 18 20 c 1.1 0 2 -0.9 2 -2 s -0.9 -2 -2 -2 s -2 0.9 -2 2 s 0.9 2 2 2 Z">
+                        </path>
+                    </svg>
+                </a>   
+
+            <!-- I couldn't quite get everything to align perfectly on this part of the website, 
+                but I know that we weren't supposed to make everything look EXACTLY like the original website, so I just left them as is haha-->
+            <a class="right rightLinks"href="https://www.google.com/imghp?hl=en&authuser=0&ogbl" target="_blank">Images</a>
+            <a class="right rightLinks" href="https://mail.google.com/mail/?authuser=0&ogbl" target="_blank">Gmail</a>
+          
+            </a>
+        </div>
+        <div class="center">
+            <div class="centralIcon centralGoogleIconPositioning">
+                <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
+            </div>
+            <div class="searchBar">         
+                <div class="searchBarMagGlass">
+                    <svg class="svg1" focusable="false" viewbox="0 0 24 24">
+                        <path d="M 15.5 14 h -0.79 l -0.28 -0.27 A 6.471 6.471 
+                        0 0 0 16 9.5 A 6.5 6.5 0 1 0 9.5 16 c 1.61 0 3.09 -0.59 
+                        4.23 -1.57 l 0.27 0.28 v 0.79 l 5 4.99 L 20.49 19 l -4.99 
+                        -5 Z m -6 0 C 7.01 14 5 11.99 5 9.5 S 7.01 5 9.5 5 S 14 7.01 
+                        14 9.5 S 11.99 14 9.5 14 Z">
+                    </path>
+                    </svg> 
+                    <input class="searchBarFormBox textOfSearch" type="text">
+                    <svg class= "svg searchBarMic" focusable="false" viewbox="0 0 24 24">
+                        <path fill="#4285f4" d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z"></path>
+                        <path fill="#34a853" d="m11 18.08h2v3.92h-2z"></path>
+                        <path fill="#fbbc05" d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z"></path>
+                        <path fill="#ea4335" d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z"></path>
+                    </svg>
+                </div>
+
+                </div>
+                <div class= "boxesUnderSearch"> 
+                    <div class ="twoButtons"> 
+                    <a>Google Search</a>
+                    <a>I'm Feeling Lucky</a>
+                </div>
+            </div>
+        
+            <div class="footer">
+                <a class="footerLeft" href="https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1" target="_blank">Advertising</a>
+                <a class="footerLeft" href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1" target="_blank">Business</a>
+                <a class="footerLeft" href="https://google.com/search/howsearchworks/?fg=1" target="_blank">How Search Works</a>
+            
+                <a class="footerCentral" href="https://sustainability.google/commitments/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=" target="_blank"><img class="centralImg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC">
+                Carbon neutral since 2007</a>
+                <a class="footerRight">Settings</a>
+                <a class="footerRight" href="https://policies.google.com/terms?hl=en&fg=1" target="_blank">Terms</a>
+                <a class="footerRight" href="https://policies.google.com/privacy?hl=en&fg=1" target="_blank">Privacy</a>
+
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+    </body>
+</html>
